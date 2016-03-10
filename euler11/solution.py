@@ -26,8 +26,6 @@ for i in range(len(allnum)):
         if num > biggesthor:
             biggesthor = num
 
-print(biggesthor)
-
 # Biggest value vertically
 biggestver = 0
 for i in range(len(allnum)):
@@ -37,8 +35,6 @@ for i in range(len(allnum)):
             num *= allnum[j+k][i]
         if num > biggestver:
             biggestver = num
-
-print(biggestver)
 
 # Biggest value diagonally 1
 
@@ -51,8 +47,6 @@ for i in range(len(allnum) -3):
         if num > biggestdia:
             biggestdia = num
 
-print(biggestdia)
-
 # Biggest value diagonally 2
 
 biggestdia2 = 0
@@ -63,8 +57,6 @@ for i in range(len(allnum) -3):
             num *= allnum[i+k][j-k]
         if num > biggestdia2:
             biggestdia2 = num
-
-print(biggestdia2)
 
 def greatestproduct(a, b, c, d):
     if a > b and a > c and a > d:
